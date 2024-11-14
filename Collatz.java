@@ -30,6 +30,6 @@ public class Collatz {
 			}
 		} 
 		System.out.println(); // print the empty space line seperating the numbers from the text
-		System.out.println("Every one of the first " + n + " hailstone sequences reached 1");
+		System.out.println("Every one of the first " + n + " hailstone sequences reached 1.");
 	}
 }

@@ -5,7 +5,6 @@ public class Cheers {
             String wordUpper = args[0].toUpperCase();
             int length = wordUpper.length();
             String anLetters = "AEFHILMNORSX";
-            System.out.println(wordUpper);
             for (int i = 0; i < length; i++){
                 if (anLetters.indexOf(wordUpper.charAt(i)) != -1){
                      System.out.println("Give me an " + wordUpper.charAt(i) + ": " + wordUpper.charAt(i) + "!");   

@@ -3,8 +3,9 @@ public class Collatz {
 	public static void main(String args[]) {
 	    int n = Integer.parseInt(args[0]);
 		String mode = args[1];
+		int i = 1;
 		for (int count = 1 ; count <= n ; count++ ){ //loop from 1 to n
-			int i = count;
+			i = count;
 			int stepCount = 1; // inside for loop so each iteration starts its own stepcount
 			if (mode.equals("v")){ //only print if mode v
 				System.out.print(i + " ");
@@ -29,6 +30,6 @@ public class Collatz {
 				System.out.println("(" + stepCount + ")"); // print the stepcount and start a new line
 			}
 		} 
-		System.out.println("Every one of the first " + n + " hailstone sequences reached 1.");
+		System.out.println("Every one of the first " + n + " hailstone sequences reached " + i + ".");
 	}
 }

@@ -15,7 +15,8 @@ public  class  TestRandom {
 		System.out.println("> 0.5:  " + over + " times");
 		System.out.println("<= 0.5: " + under + " times");
 		if (over>0 && under>0){ //check if ratio is possible amd print it as needed
-			System.out.println("Ratio:" + (((double)over)/under));
+			double ratio = (over < under) ? (((double)over)/under) : (((double)under)/over);
+			System.out.println("Ratio:" + ratio);
 		}		
 	}
 }
